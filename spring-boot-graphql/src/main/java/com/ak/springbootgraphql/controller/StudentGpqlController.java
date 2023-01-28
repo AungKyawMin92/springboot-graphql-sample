@@ -23,7 +23,7 @@ public class StudentGpqlController {
 
     @PostMapping("/graphql/student")
     public ResponseEntity<Object> getAllStudents(@RequestBody String query) {
-        ExecutionResult result = studentGpqlService.getAllStudents(query);
+        ExecutionResult result = studentGpqlService.getStudents(query);
         return new ResponseEntity<Object>((Object) result, HttpStatus.OK);
     }
 

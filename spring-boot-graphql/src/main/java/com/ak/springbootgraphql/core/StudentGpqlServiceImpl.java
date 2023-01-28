@@ -67,14 +67,9 @@ public class StudentGpqlServiceImpl implements StudentGpqlService{
     }
 
     @Override
-    public ExecutionResult getAllStudents(String query) {
+    public ExecutionResult getStudents(String query) {
         ExecutionResult result = graphQL.execute(query);
         return result;
     }
 
-    @Override
-    public ExecutionResult findStudentByEmail(String query) {
-        ExecutionResult result = graphQL.execute(query);
-        return result;
-    }
 }

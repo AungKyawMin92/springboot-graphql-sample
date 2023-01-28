@@ -6,7 +6,6 @@ import graphql.ExecutionResult;
 import java.util.List;
 
 public interface StudentGpqlService {
-    ExecutionResult getAllStudents(String query);
+    ExecutionResult getStudents(String query);
 
-    ExecutionResult findStudentByEmail(String query);
 }
